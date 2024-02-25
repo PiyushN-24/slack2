@@ -52,7 +52,7 @@ pipeline {
         }
 	stage('Slack Notification') {
 	    steps {
-		slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#slack-notification', color: 'good', message: 'Slack Notify Configured Success', teamDomain: 'DevOps',  tokenCredentialId: '767ba4f4-0007-43c3-93f9-53af49692ebf'
+		slackSend baseUrl: 'https://hooks.slack.com/services/', channel: '#slack-notification2', color: 'good', message: 'Welcome to Slack via Jenkins', teamDomain: 'DevOps', tokenCredentialId: 'slack-notification2', username: 'therecker2418'
 	    }
 	}
     }
